@@ -1,0 +1,41 @@
+@import "./gallery-pin.scss";
+
+.gallery {
+  & {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    width: 560px;
+    border: 10px solid #ccc;
+  }
+  .map {
+    img {
+      width: 560px;
+    }
+  }
+  .links {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    top: 0;
+    padding: 50px 100px;
+    p {
+      margin: 2px 0;
+    }
+    a {
+      color: #666;
+      line-height: 34px;
+      &::before {
+        content: '';
+        display: inline-block;
+        vertical-align: bottom;
+        width: 30px;
+        height: 34px;
+        margin-right: 5px;
+        background: url(../images/pin-map.png) no-repeat center;
+        background-size: 100%;
+      }
+    }
+  }
+}

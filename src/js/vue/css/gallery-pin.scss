@@ -1,0 +1,45 @@
+.gallery-pin {
+  .pin {
+    position: absolute;
+    width: (60px / 5 * 4);
+    height: (68px / 5 * 4);
+
+    &, img {
+      display: block;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      &.-active + .tooltip {
+        display: block;
+        animation: fade-in .2s cubic-bezier(.22,.61,.36,1) forwards;
+      }
+    }
+    .tooltip {
+      display: none;
+      position: absolute;
+      z-index: 2;
+      top: -30px;
+      left: 50%;
+      transform: translate(-50%);
+      white-space: nowrap;
+      padding: 5px 10px;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 20px;
+      color: palette('link');
+      background: #fefefa;
+      border-radius: 5px;
+      box-shadow: 0 0 10px 0 rgba(#000, .2);
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  };
+}
