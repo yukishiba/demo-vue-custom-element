@@ -5,7 +5,7 @@
       span.pin(v-for="(item, index) in items", :style="position[index]")
         img.preview-img-item(
           :class="pinClass(item.pid)",
-          src="/images/vue/pin-map.png",
+          :src="'./images/vue/pin-map.png'",
           @click="openPhotoSwipe(index)",
           @touchstart="mEnter(item.pid) && openPhotoSwipe(index)",
           @mouseenter="mEnter(item.pid)", @mouseleave="mLeave(item.pid)",
@@ -114,7 +114,7 @@ export default {
       e.preventDefault();
       if (this.enableTouch) this.pinEnter(e);
       const target = document.querySelector('.pid-' + e.target.dataset.pid);
-      target.dispatchEvent(new Event("click"));
+      target.dispatchEvent(new Event('click'));
     },
     pinClass(id) {
       const cls = [`pid-${id}`];

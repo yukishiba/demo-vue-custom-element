@@ -44,7 +44,7 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: vueImageDir,
-              publicPath: (path) => vueImageDir + path,
+              publicPath: (path) => '.' + vueImageDir + path,
             },
           },
         ],
