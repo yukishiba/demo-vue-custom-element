@@ -1,0 +1,13 @@
+/*! PhotoSwipe - v4.1.3 - 2019-01-08
+* http://photoswipe.com
+* Copyright (c) 2019 Dmitry Semenov; */
+
+/*! PhotoSwipe Default UI - 4.1.3 - 2019-01-08
+* http://photoswipe.com
+* Copyright (c) 2019 Dmitry Semenov; */
+
+/**
+  * vue-custom-element v3.3.0
+  * (c) 2021 Karol Fabjańczuk
+  * @license MIT
+  */
