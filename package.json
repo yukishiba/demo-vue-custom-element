@@ -20,7 +20,7 @@
     "eslint-loader": "^4.0.2",
     "eslint-plugin-vue": "^7.9.0",
     "file-loader": "^6.2.0",
-    "node-sass": "^6.0.0",
+    "node-sass": "^7.0.0",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
     "sass-loader": "^11.1.0",
